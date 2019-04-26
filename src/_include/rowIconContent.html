@@ -1,0 +1,24 @@
+@@if (context.haveMainTitle ) {
+<div class="row-mainTitle">
+  <span>@@mainTitle</span>
+  <p class="hr-line"></p>
+</div>
+}
+<div class="row-content">
+  @@for (var i = 0; i < (context.article.length); i++) { @@if (context.isFinanceGoods) {<a class="row-col"
+    href="`+context.article[i].link+`" title="點選了解更多`+context.article[i].title+`"> }
+    @@if (!context.isFinanceGoods) {<div class="row-col">}
+      <div class="row-iconbox" data-length="`+context.article.length+`">
+        <i class="`+context.article[i].icon+` icon"></i>
+        <p class="row-title">
+          `+context.article[i].title+`
+        </p>
+        <p class="hr-line"></p>
+      </div>
+      <div class="row-contentbox">
+        `+context.article[i].content+`
+      </div>
+      @@if (context.isFinanceGoods) {</a>}
+      @@if (!context.isFinanceGoods) {
+    </div>}
+    }

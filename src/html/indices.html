@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="indices-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content right black">
+          <div class="slogan">
+            <p class="title">指數</p>
+            <p class="subtitle">
+              看不懂個股、個股風險太大？歡迎選擇我們的指數類商品
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              開始指數交易 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="content-item flex-column">
+      @@include('./rowIconContent.html', {
+      "haveMainTitle": true,
+      "mainTitle":"為何選擇指數",
+      "article":[{
+      "icon":"icon-production",
+      "title":"個股方向不明確",
+      "content": "個股方向不明時，指數期貨是個參與市場的好選擇"
+      },{
+      "icon":"icon-global-location",
+      "title":"看好某區域市場的經濟",
+      "content": "看好一個區域的經濟，但又不想承受公司個別風險，指數期貨將是您最好的選擇"
+      },{
+      "icon":"icon-seo",
+      "title":"價格發現功能",
+      "content": "由於股指期貨具備了良好的流動性，市場上如果有信息可以很快的反映到期貨市場上，並能夠快速傳遞到現貨市場上去。因此相對於現貨市場來說，股指期貨具有價格發現功能"
+      },{
+      "icon":"icon-suitcase",
+      "title":"有效規避風險",
+      "content": "期貨的風險轉移是通過套期保值來實現的，股指期貨的引入為市場對衝風險提供了良好的工具"
+      },{
+      "icon":"icon-calculator",
+      "title":"交易成本低廉",
+      "content": "股指期貨交易採用保證金交易制度，交易成本較低"
+      },{
+      "icon":"icon-pulley",
+      "title":"槓桿特性",
+      "content": "股指期貨交易不需要全額支付合約價值的資金，只需要支付一定比例的保證金就可以簽訂較大價值的合約"
+      }]
+      })
+    </section>
+    <section class="content-item grey_bg">
+      <div class="content-img">
+        <img src="dist/images/finance.png" alt="" />
+      </div>
+      <div class="content-word">
+        <p class="title">
+          何謂指數?
+        </p>
+        <p class="content">
+          指數期貨屬於金融衍生品的一種，它是以特定股票市場指數為交易標的之期貨契約，由於股價指數可用來評估整體股票市場的表現，因此投資人買賣一口股價指數期貨契約，就相當於買賣一組由計算指數的個股所組成的投資組合。股價指數期貨的交易可用來協助股票持有者建立避險部位，或用來比較共同基金經理人的操作績效。
+        </p>
+      </div>
+    </section>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

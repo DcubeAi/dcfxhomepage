@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    @@include('./header.html')
+    <article class="new-container">
+      <section class="new-content">
+        <p class="new-maintitle">即時新聞</p>
+        <div class="new-item">
+          <ul class="new-lists" id="new-lists">
+            <div class="loading-container">
+              <div class="lds-dual-ring"></div>
+              <span>新聞載入中...</span>
+            </div>
+          </ul>
+        </div>
+        <div class="pageview-content" id="pageview">
+        </div>
+      </section>
+    </article>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+  <script lang="javascript">
+    getFinanceNews();
+  </script>
+</body>
+
+</html>

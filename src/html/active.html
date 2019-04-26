@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="active-container">
+      <section class="active-content">
+        <p class="active-maintitle">
+          股市交易時間
+        </p>
+        <div class="active-item">
+          <ul class="active-lists" id="time_list">
+            <li class="list-title">
+              <span>國家</span>
+              <span>交易所名稱</span>
+              <span>當地交易時間<br />(星期一至五)</span>
+              <span>本地交易時間<br />(星期一至五)</span>
+            </li>
+            <div class="list-content">
+              <ul class="active-lists" id="stock-lists">
+                <div class="loading-container">
+                  <div class="lds-dual-ring"></div>
+                  <span>資料載入中...</span>
+                </div>
+              </ul>
+            </div>
+          </ul>
+          <p class="note">此時間是與當地冬令時間轉換，若當地實施夏令時間， 請將時間提早一小時</p>
+        </div>
+      </section>
+      <section class="active-content">
+        <p class="active-maintitle">
+          市場活動
+        </p>
+        <div class="active-item no-border">
+          <script type="text/javascript" src="https://c.mql5.com/js/widgets/calendar/widget.js?6"></script>
+          <div id="economicCalendarWidget"></div>
+          <script type="text/javascript">
+            new economicCalendar({ width: "100%", height: "100%", mode: 2, lang: "zh" });
+          </script>
+        </div>
+      </section>
+      <section class="active-content">
+        <p class="active-maintitle">
+          各國假期
+        </p>
+        <div class="active-item">
+          <ul class="active-lists" id="holiday-list">
+            <li class="list-title">
+              <span>國家</span>
+              <span>假期佳節</span>
+              <span>日期</span>
+              <span></span>
+            </li>
+            <div class="list-content">
+              <ul class="active-lists" id="holiday-lists">
+                <div class="loading-container">
+                  <div class="lds-dual-ring"></div>
+                  <span>資料載入中...</span>
+                </div>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </article>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+  <script lang="javascript">
+    getStockMarketTime();
+    getHoliday();
+  </script>
+</body>
+
+</html>

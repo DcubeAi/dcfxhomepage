@@ -1,0 +1,237 @@
+body
+  &> *
+    width: 100%
+  &.registerMode
+    overflow: hidden
+    .container
+      left: -600px
+      pointer-events: none
+    .register-bg
+      display: block
+      opacity: 1
+    .infobar.isButtomFixed
+      left: -600px
+      z-index: 1
+
+.header
+  height: 70px
+  padding: 0 3%
+  box-shadow: 0px 4px 16px 0px rgba(10, 10, 10, 0.07)
+  position: fixed
+  top: 0
+  z-index: 2
+  background-color: #fff
+
+.container
+  position: relative
+  padding-bottom: 60px
+  z-index: 1
+  background: white
+  left: 0
+  transition: all 0.6s ease-in
+  padding-top: 70px
+  &> *
+    width: 100%
+  .content-square
+    padding: 3% 0
+    .content-item
+      padding: 0
+      height: 40vw
+      &:first-child
+        flex-direction: row-reverse
+      .content-img
+        height: 100%
+        img
+          width: 100%
+          height: 100%
+          padding: 0
+
+  .content-item
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2% 4% 4% 4%
+    &.grey_bg
+      background-color: $lightBackground
+    &.flex-column
+      flex-direction: column
+    &#content-about
+      height: 100%
+      .imgs
+        height: 100%
+        width: 100%
+        position: relative
+        overflow: hidden
+      .imgs-content
+        text-align: center
+        width: 35%
+      img
+        top: -130px
+        position: absolute
+    &.content-top-image
+      padding: 0
+      width: 100%
+      img
+        max-width: 100%
+        height: auto
+    .content-word
+      padding: 4% 6%
+      width: 50%
+      .title
+        font-size: 2.3rem
+        margin-bottom: 3%
+        font-weight: 600
+        padding-top: 15px
+        margin-top: 15px
+        position: relative
+        &:before
+          content: ""
+          position: absolute
+          display: block
+          top: 0
+          left: 2px
+          width: 68px
+          height: 5px
+          background: $mainGreen
+      .content
+        font-size: 1.1rem
+        line-height: 1.8
+        color: $fontSubColor
+        margin-bottom: 7%
+        letter-spacing: 0.5px
+    .content-img
+      width: 50%
+      text-align: center
+      img
+        width: 80%
+        height: auto
+        padding: 8% 0
+    .content-list
+      color: $mainBlue
+      font-size: 1.2rem
+      line-height: 2.5
+      padding-top: 5%
+      i.mark
+        font-size: 1.5rem
+        font-weight: 600
+        vertical-align: middle
+        margin-right: 10px 
+    
+.downloads
+  display: flex
+  flex-direction: column
+  .item
+    line-height: 2
+    color: $fontColor
+    font-weight: 600
+    margin-right: 6%
+    &:hover
+      color: $mainBlue
+      span
+        text-decoration: underline
+    i
+      padding-right: 5px 
+#content-mt
+  .content-word
+    .sub-title
+      font-size: 1.5rem
+      i
+        vertical-align: middle
+        margin-right: 10px
+    li
+      padding: 2% 0
+    .item
+      color: #505050
+      font-weight: 600
+      margin-right: 6%
+      span
+        display: block
+        text-align: center
+        line-height: 1
+      a:hover
+        text-decoration: underline
+      i
+        vertical-align: middle
+        margin-right: 6px 
+    .links
+      padding-left: 2.5rem
+      display: flex
+
+  
+    .downloads
+      flex-direction: row
+      img
+        width: 100px
+        display: block
+      span
+        display: block
+        text-align: center
+
+@media screen and (max-width: 1088px)
+  body
+    &.registerMode
+      .container, .infobar.isButtomFixed
+        left: -100%
+        
+  .header
+    padding: 0
+    .navbar-brand
+      padding-left: 3%
+    .navbar-link .icon-angle-down, .navbar-title
+      display: none
+  .container
+    .content-square
+      .content-item:not(.flex-column)
+        flex-wrap: wrap-reverse
+      .content-img
+        position: relative
+        height: 45vh
+        overflow: hidden
+        img
+          height: auto
+          position: absolute
+          left: 0
+          top: 0
+    .content-item:not(.flex-column)
+      position: relative
+      flex-wrap: wrap
+      height: auto
+      padding: 0
+      .content-word, .content-img
+        width: 100%
+      .content-word
+        .title
+          border-left: $mainGreen solid 6px
+          padding-left: 15px
+          &:before
+            content: none
+      .navbar-item
+        justify-content: center
+      &#content-about .imgs-content
+        width: 60%
+  
+@media screen and (max-width: 426px)
+  .navbar-brand .navbar-item
+    width: 100px
+    padding: 0
+    &:after
+      content: ""
+      background-image: url(../images/logo-s.png)
+      width: 100%
+      height: 100%
+      background-size: auto 80%
+      background-repeat: no-repeat
+      background-position: left center
+    img
+      display: none
+  .container 
+    .content-item
+      &#content-about
+        img
+          top: 0
+        .imgs-content
+          width: 80%
+      .content-word
+        width: 80%
+        flex: 0 0 80%
+  

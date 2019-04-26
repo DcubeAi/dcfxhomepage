@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="forex-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content left black">
+          <div class="slogan">
+            <p class="title">外匯</p>
+            <p class="subtitle">
+              DcubeTrade提供極具競爭力的點差，讓客戶交易的一開始就已立於不敗之地
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              開始外匯交易 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="content-item flex-column">
+      @@include('./rowIconContent.html', {
+      "haveMainTitle": true,
+      "mainTitle":"為何選擇外匯",
+      "article":[{
+      "icon":"icon-network",
+      "title":"全世界流動性最高的金融市場",
+      "content": "在任何時間任何地點，絕對不會出現找不到交易對手的狀況發生"
+      },{
+      "icon":"icon-hours",
+      "title":"24/5交易",
+      "content": "除週末與特定節日外，一天24小時隨時隨地皆透過網路都可以達成想要的交易"
+      },{
+      "icon":"icon-accounting",
+      "title":"無人為操作",
+      "content": "沒有人可以操控外匯市場，是全世界最接近完全競爭與最有效率的市場"
+      },{
+      "icon":"icon-money",
+      "title":"低門檻之保證金交易",
+      "content": "可以用較低的初始資金去控制一筆額度較大的交易，例如使用1%保證金率，就代表初始資金只有1000美元時，可以撬動相當於100,000美元的倉位"
+      },{
+      "icon":"icon-margin",
+      "title":"高波動性",
+      "content": "一個市場越動蕩，意味著交易機會越多。盡管外匯市場的波動性較大，但細分起來每一組貨幣對的波動性均有所不同。投資者應選擇適合自己風險策略的交易貨幣"
+      },{
+      "icon":"icon-up-and-down",
+      "title":"做多做空，雙向交易",
+      "content": "外匯市場可以雙向交易，無論市場是漲是跌，投資者均可以投資獲利"
+      }]
+      })
+    </section>
+    <section class="content-item grey_bg">
+      <div class="content-img">
+        <img src="dist/images/finance.png" alt="" />
+      </div>
+      <div class="content-word">
+        <p class="title">
+          何謂外匯?
+        </p>
+        <p class="content">
+          外匯市場是全球規模最大且流動性最好的金融市場，其市場分散於世界各地用於交易各國貨幣，並即時反應國際性貿易及匯率變動的結果，且除了周末與交易中心所在國家的重大節日外，24小時隨時隨地都可透過網路達成想要的交易，並且擁有較低保證金與較高倍數槓桿，能幫助投資者更快達到財富自由與實現夢想，提高收益。
+        </p>
+      </div>
+    </section>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

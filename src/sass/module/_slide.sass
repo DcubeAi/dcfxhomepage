@@ -1,0 +1,130 @@
+.slide
+  height:  calc(100vh - 130px)
+  .slide-item
+    width: 100%
+    height: 100%
+    position: relative
+    &> *
+      position: absolute
+  .slide-background
+    width: 100%
+    height: 100%
+    position: relative
+    background-size: 100% auto
+    background-repeat: no-repeat
+  .slide-linear
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .slide-content
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    &.black
+      color: white
+    .slogan
+      position: absolute
+    .title
+      font-size: 3rem
+      margin-bottom: 10px
+    .subtitle
+      font-size: 1.6rem
+      line-height: 1.5
+    .btn
+      display: block
+      margin-top: 20px
+      font-size: 1.5rem
+
+#index-slide
+  .slide-background
+    background-image: url(../images/slide1.jpg)
+    background-size: 100% 100%
+    
+#forex-slide
+  .slide-background
+    background-image: url(../images/forex.png)
+
+#metal-slide
+  .slide-background
+    background-image: url(../images/metals.jpg)
+
+#cfd-slide
+  .slide-background
+    background-image: url(../images/cfd.jpg)
+  .slogan
+    margin-top: 2%
+
+#indices-slide
+  .slide-background
+    background-image: url(../images/indices.jpg)
+
+#energy-slide
+  .slide-background
+    background-image: url(../images/energy.jpg)
+
+#about-slide
+  .slide-background
+    background-image: url(../images/about.png)
+    background-position: center
+
+@media screen and (min-width: 1089px)
+  .slide 
+    .slide-linear
+      display: none
+    .slide-content
+      &.right .slogan
+        left: 55%
+      &.left .slogan
+        left: 10%
+      &.black:not(.slide-bk) .slogan
+        background: rgba(0, 0, 0, 0.3)
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3)
+      .slogan
+        width: 35%
+        padding: 3%
+
+@media screen and (max-width: 1088px)
+  .slide
+    .slide-linear
+      background: rgba(0, 0, 0, 0.75)
+    .slide-background
+      background-size: auto 100%
+    .slide-content
+      left: 10%
+      width: 80%
+      text-align: center
+      &.right .slogan, &.left .slogan
+        padding: 0
+      .slogan
+        width: 100%
+        .title
+          white-space: normal 
+      .btn
+        margin: auto
+        margin-top: 20px
+
+  #index-slide
+    .slide-background
+      background-size: auto 100%
+
+  #cfd-slide .slogan
+    width: 100%
+    margin: 0
+
+  #indices-slide .slogan, #energy-slide .slogan
+    width: 100%
+    padding: 0
+    color: $white
+
+  #metal-slide .slide-background
+    background-position-x: 84%
+
+  #about-slidesss
+    .slide-linear
+      display: none

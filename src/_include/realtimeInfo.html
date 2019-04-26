@@ -1,0 +1,26 @@
+<div class="infobar isButtomFixed">
+  <div class="forex-price">
+    <section class="forex-itembox" id="forex-price">
+      <div class="loading-container">
+        <div class="lds-dual-ring"></div>
+        <span>報價取得中...</span>
+      </div>
+      <!-- <div-- class="forex-item">
+        <p class="title">黃金</p>
+        <p class="content">321.54</p>
+      </div-->
+    </section>
+    <section class="forexbtnbox">
+      <button class="btn btn-red" onclick="toggleRegister()">
+        立即開始交易
+      </button>
+    </section>
+  </div>
+</div>
+<script lang="javascript">
+  const currentWidth = document.body.clientWidth;
+  if (currentWidth > 600) {
+    var itemCount = getItemCount();
+    var int = self.setInterval("getPrice(itemCount)", 60000);
+  }
+</script>

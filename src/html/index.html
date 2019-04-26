@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="index-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content right black slide-bk">
+          <div class="slogan">
+            <p class="title">DcubeTrade即將上線</p>
+            <p class="subtitle">
+              提供優質專業金融服務，顛覆您對金融交易的認知
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              搶先一試 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="slide-item">
+        <div class="slide-background"></div>
+        <div class="slide-content left">
+          <div class="slogan">
+            <p class="title">Top500的金融商品</p>
+            <p class="subtitle">
+              提供外匯、能源的金融商品之外，還提供各國優質企業的股票
+            </p>
+            <button class="btn btn-primary" onclick="toggleAlertPage()">
+              搶先一試 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="slide-item">
+        <div class="slide-background"></div>
+        <div class="slide-content right">
+          <div class="slogan">
+            <p class="title">虛擬貨幣</p>
+            <p class="subtitle">
+              提供時下最夯的虛擬貨幣交易通路
+            </p>
+            <button class="btn btn-primary" onclick="toggleAlertPage()">
+              搶先一試 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section> -->
+    </article>
+    <section class="content-item flex-column" id="content-finance">
+      @@include('./rowIconContent.html', {
+      "isFinanceGoods": true,
+      "haveMainTitle": true,
+      "mainTitle":"金融商品",
+      "article":[{
+      "link": "/forex.html",
+      "icon":"icon-currency",
+      "title":"外匯",
+      "content": "在70多個FX對上交易差價合約，並受益於緊密的點差和快速的訂單執行"
+      },{
+      "link": "/cfd.html",
+      "icon":"icon-graph",
+      "title":"CFD",
+      "content": "從世界各地交易期貨差價合約，探索無限的交易機會"
+      },{
+      "link": "/indices.html",
+      "icon":"icon-stock",
+      "title":"指數",
+      "content": "來自歐洲，亞洲和美洲的熱門指數交易差價合約"
+      },{
+      "link": "/metal.html",
+      "icon":"icon-gold",
+      "title":"貴金屬",
+      "content": "在現貨金屬上交易差價合約並揭開新的交易機會"
+      },{
+      "link": "/energy.html",
+      "icon":"icon-water",
+      "title":"能源",
+      "content": "在布倫特石油，WTI和天然氣等現貨能源上交易差價合約，並使您的投資組合多樣化"
+      }]
+      })
+    </section>
+    <article class="content-square">
+      <section class="content-item">
+        <div class="content-word">
+          <p class="title">
+            DcubeTrade Inc.
+          </p>
+          <div class="content">
+            成立於2019年，積極投入在區塊鏈及AI人工智慧研發，及企業私有雲技術建置、公有雲介接、
+            雲端服務部署、客服中心、高效能運算、整合通訊、應用軟體開發等領域，結合專業技術，為
+            企業客戶規劃建置資訊通訊系統架構，導入在CRM、ERP、MES專業顧問諮詢，提供兩岸優質售後
+            服務，以協助企業發揮最大的營運效益。
+            <ul class="content-list">
+              <li><i class="icon-checked mark"></i>嚴謹的負餘額保護，讓您的帳戶永遠不會低於零</li>
+              <li><i class="icon-checked mark"></i>多元的外匯自動交易程式(EA)和易懂的設定教學</li>
+              <li><i class="icon-checked mark"></i>五花八門的金融交易商品，讓您隨時更換策略</li>
+              <li><i class="icon-checked mark"></i>完善帳戶管理介面和各項報表</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-img">
+          <img src="dist/images/company.png" alt="" />
+        </div>
+
+      </section>
+      <section class="content-item">
+        <div class="content-word">
+          <p class="title">
+            市場最先進的交易平台
+          </p>
+          <p class="content">
+            MetaTrader 5 交易平台結合訂單執行與分散式運算的先進技術，實現最具雄心的交易理念。
+            MetaTrader 5 是建立和實測自動交易程式與交易策略的最先進的平台之一。
+            當您在使用自動交易程式時，如果您重視的是速度與可靠性，並且體驗市場最新技術，那麼 MetaTrader 5 是您的唯一首選。
+          </p>
+          <a href="/metatrader.html" class="btn btn-primary">使用 MetaTrader 5 <i class="icon-caret-right"></i></a>
+        </div>
+        <div class="content-img">
+          <img src="dist/images/software.png" alt="" />
+        </div>
+      </section>
+    </article>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

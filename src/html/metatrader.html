@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="about-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content right black">
+          <div class="slogan">
+            <p class="title">MetaTrader 5</p>
+            <p class="subtitle">
+              建立自動交易程式與交易策略的最先進的平台之一
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              開始體驗 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="content-item grey_bg" id="content-mt">
+      <div class="content-img">
+        <img src="dist/images/metatrader.png" alt="" />
+      </div>
+      <div class="content-word">
+        <p class="title">MetaTrader 5</p>
+        <div class="content">
+          DcubeTrade 提供世界上最先進的 MetaTrader 5 交易平台，完全實現NDD (No Dealing Desk) ，提供最強大的MQL5語言，可完全實現自動化交易。
+          <ul>
+            <li>
+              <p class="sub-title"><i class="icon-desktop"></i>Desktop</p>
+              <div class="links">
+                <p class="item">
+                  <a href="https://download.mql5.com/cdn/web/fxpro.financial.services/mt5/fxpro5setup.exe"><i
+                      class="icon-download"></i>MetaTrader Windows</a>
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="sub-title"><i class="icon-smartphone"></i>Mobile</p>
+              <div class="links">
+                <div class="item">
+                  <img src="dist/images/mt5_ios.png" alt="" />
+                  <span>MT5 Ios</span>
+                </div>
+                <div class="item">
+                  <img src="dist/images/mt5_android.png" alt="" />
+                  <span>MT5 Android</span>
+                </div>
+              </div>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

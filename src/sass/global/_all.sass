@@ -1,0 +1,73 @@
+html, body
+	width: 100%
+	height: 100%
+body
+	font-family: $font
+	text-rendering: optimizeLegibility
+	color: $fontColor
+	overflow: auto
+	line-height: normal
+	background-color: $white
+	box-sizing: border-box
+	letter-spacing: 0.5px
+
+a
+	cursor: pointer
+	text-decoration: none
+	color: inherit
+
+input[type=reset]
+	display: none
+
+.btn
+	padding: 6px 20px
+	display: inline-block
+	border: thin solid
+	cursor: pointer
+	border-radius: 3px
+	color: $white
+	border-color: $white
+	line-height: 1.6
+	transition: background 0.3s ease-in
+	letter-spacing: 0.5px
+	font-size: 1.1rem
+	white-space: nowrap
+
+.btn-default
+	color: $fontSubColor
+	border-color: $fontSubColor
+
+.btn-primary
+	background-color: $mainBlue
+	border-color: $mainBlue
+	&.btn-primary-o
+		background-color: transparent
+		color: $mainBlue
+	&:hover
+		background-color: $mainBlue-hover
+		border-color: $mainBlue-hover
+
+.btn-green
+	background-color: $mainGreen
+	border-color: $mainGreen
+	&.btn-green-o
+		background-color: transparent
+		color: $mainGreen
+	&:hover
+		background-color: $mainGreen-hover
+		border-color: $mainGreen-hover
+
+.btn-red
+	background-color: $mainRed
+	border-color: $mainRed
+	&.btn-red-o
+		background-color: transparent
+		color: $mainRed
+	&:hover
+		background-color: $mainRed-hover
+		border-color: $mainRed-hover
+
+
+@media screen and (max-width: 426px)
+	html
+		font-size: 90%

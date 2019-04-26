@@ -1,0 +1,12 @@
+.active-container .active-maintitle {
+  color: white;
+  font-size: 2rem;
+  line-height: 2;
+  padding-left: 2%;
+  background: #3880c3;
+  letter-spacing: 2pt;
+  text-align: center; }
+
+iframe {
+  height: 100%;
+  width: 100%; }

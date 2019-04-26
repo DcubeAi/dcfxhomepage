@@ -1,0 +1,40 @@
+.registerbox
+  position: fixed
+  top: 0
+  right: 0
+  width: 600px
+  padding: 4% 2%
+  height: 100%
+  background: $white
+  overflow-y: auto
+  .main-title
+    font-size: 1.8rem
+    text-indent: 0
+    line-height: 1.2
+    margin-bottom: 1%
+  .close
+    position: absolute
+    right: 6%
+    top: 3%
+    font-size: 1.5rem
+    color: #c5c5c5
+    cursor: pointer
+    &:hover
+      color: $fontSubColor
+
+.register-bg
+  background: rgba(0, 0, 0, .4)
+  display: none
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 5
+  opacity: 0
+  transition: all 0.8s ease-in
+
+@media screen and (max-width: 1088px)
+  .registerbox
+    width: 100%
+    padding: 90px 40px

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="metal-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content left black slide-bk">
+          <div class="slogan">
+            <p class="title">貴金屬</p>
+            <p class="subtitle">
+              對物價與國際情勢指標判斷的另一個好選擇
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              開始貴金屬交易 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="content-item flex-column">
+      @@include('./rowIconContent.html', {
+      "haveMainTitle": true,
+      "mainTitle":"為何選擇貴金屬",
+      "article":[{
+      "icon":"icon-gold-up",
+      "title":"避險工具",
+      "content": "在國際局勢動盪的時代，黃金是最好的避險商品"
+      },
+      {
+      "icon":"icon-team",
+      "title":"交易所受密切監管和規範",
+      "content": "貴金屬市場的運作和監管等機制已經非常成熟和成功。對交易者來說，是非常有利的選擇"
+      },
+      {
+      "icon":"icon-contract",
+      "title":"套期保值",
+      "content": "買入或賣出與現貨市場數量相當、但交易方向相反的期貨合約，期在未來某一時間通過賣出或買入期貨合約來補償現貨市場價格變動所帶來的實際價格風險"
+      },
+      {
+      "icon":"icon-mobile-shopping",
+      "title":"交易透明化",
+      "content": "通過交易所進行交易，因此交易量和所有交易行為都是全部對市場公開的-無論你是個人還是機構，獲取的信息都是一樣的"
+      },
+      {
+      "icon":"icon-pulley",
+      "title":"槓桿特性",
+      "content": "貴金屬期貨交易不需要全額支付合約價值的資金，只需要支付一定比例的保證金就可以簽訂較大價值的合約"
+      },
+      {
+      "icon":"icon-auction",
+      "title":"流動性極高",
+      "content": "龐大的交易量吸引了眾多投機者加入，使得整體貴金屬期貨交易市場有很高的市場流動性"
+      }]
+      })
+    </section>
+    <section class="content-item grey_bg">
+      <div class="content-img">
+        <img src="dist/images/finance.png" alt="" />
+      </div>
+      <div class="content-word">
+        <p class="title">
+          何謂貴金屬?
+        </p>
+        <p class="content">
+          國際期貨市場上中把金、銀、鉑、鈀等期貨歸類在貴金屬期貨，因其價值較高。其中以黃金、白銀、銅、白金四類商品為貴金屬期貨的四大主要產品，其中黃金的主要用途是做為保值、央行儲備及部份交易媒介，其餘商品則是屬於工業用金屬。透過市場上提供的各種工具為全球市場提供交易機會。這些市場不僅提供相關性很強的商品，而且每種市場都有一些獨特的價格驅動因素，可創造許多有吸引力的價差交易機會。
+        </p>
+      </div>
+    </section>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

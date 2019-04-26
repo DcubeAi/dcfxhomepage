@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  @@include('./headInfo.html')
+</head>
+
+<body>
+  @@include('./register.html')
+  <div class="container">
+    <div class="register-bg"></div>
+    @@include('./header.html')
+    <article class="slide" id="cfd-slide">
+      <section class="slide-item">
+        <div class="slide-background">
+          <p class="slide-linear"></p>
+        </div>
+        <div class="slide-content right black slide-bk">
+          <div class="slogan">
+            <p class="title">CFD</p>
+            <p class="subtitle">
+              看好某檔個股？DcubeTrade提供國際間熱門的個股
+            </p>
+            <button class="btn btn-primary" onclick="toggleRegister()">
+              開始CFD交易 <i class="icon-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+    <section class="content-item flex-column">
+      @@include('./rowIconContent.html', {
+      "haveMainTitle": true,
+      "mainTitle":"為何選擇CFD",
+      "article":[{
+      "icon":"icon-global",
+      "title":"參與全球股票市場",
+      "content": "國界再也不是交易的界線，真正實現全球市場交易"
+      },{
+      "icon":"icon-seesaw",
+      "title":"加大槓桿",
+      "content": "看好某公司前景，加大槓桿倍數以獲取加倍利益"
+      },{
+      "icon":"icon-down",
+      "title":"交易成本較低",
+      "content": "相對於一般交易，這類衍生性商品更適合短線頻繁交易並且不會損失太多手續費"
+      },{
+      "icon":"icon-piggy-bank",
+      "title":"小資金即可交易",
+      "content": "這類合約都可以切割到小單位或高槓桿交易，因此資金小也能操作。(但資金小也要小心高槓桿的斷頭風險，尤其新手不建議用高槓桿。)"
+      },{
+      "icon":"icon-supermarket",
+      "title":"商品種類繁多、多空都可操作",
+      "content": "差價合約提供了很大的彈性，股票、外匯、商品、ETF、加密貨幣等等金融產品都可以用差價合約方式操作"
+      },{
+      "icon":"icon-calendar",
+      "title":"差價合約沒有到期日",
+      "content": "差價合約是不可交割合約，即合約中的商品不會進行實物交割，結算時只進行差價的現金結算，所以差價合約理論上是沒有期限的"
+      }]
+      })
+    </section>
+    <section class="content-item grey_bg">
+      <div class="content-img">
+        <img src="dist/images/finance.png" alt="" />
+      </div>
+      <div class="content-word">
+        <p class="title">
+          何謂CFD?
+        </p>
+        <p class="content">
+          差價合約是一種跨國性的金融衍生工具，它讓國界再也不是交易的界線，允許交易者利用標的資產的價格上漲或價格下跌獲利，以股票差價合約最為常見，通常沒有合約到期日，且不涉及實物交割，交易人只要付出少許保證金便可參與市場，並且透過看好某公司前景加大槓桿倍數，即能加大獲利能力。
+        </p>
+      </div>
+    </section>
+    @@include('./warning.html')
+    @@include('./footer.html')
+    @@include('./realtimeInfo.html')
+  </div>
+</body>
+
+</html>

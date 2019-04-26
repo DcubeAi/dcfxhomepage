@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <title>DcubeTrade - 虛擬金融戶頭註冊</title>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="progressbar">
+      <li class="active" id="start">註冊須知</li>
+      <li id="info">個人基本資料</li>
+      <li id="finance">個人金融資訊</li>
+      <li id="upload">申請必要文件上傳</li>
+      <li id="end">確認資料</li>
+      <li id="end">註冊完成</li>
+    </ul>
+    <div class="content" id="content-start">
+      <p class="title">註冊須知</p>
+      <p class="sub-title">
+        歡迎AI
+        Trade，請花數分鐘時間完成虛擬金融開戶申請流程，請備妥下述所需文件與電子圖檔
+      </p>
+      <label>
+        <input type="checkbox" name="register-start" />
+        <span class="">申請人之護照</span>
+      </label>
+      <label>
+        <input type="checkbox" name="register-start" />
+        <span class="">申請人之銀行戶頭</span>
+      </label>
+      <label>
+        <input type="checkbox" name="register-start" />
+        <span class="">申請人之三個月有效地址</span>
+      </label>
+    </div>
+    <div class="content" id="content-info">
+      <p class="title">個人基本資料</p>
+      <div class="inputbox">
+        <p class="form-title">介紹人 / Introducer No: *</p>
+        <input type="text" class="form-input" placeholder="ex. 12345" required />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">申請人之英文姓名 / English Name</p>
+        <p class="form-note">與護照名稱格式相同</p>
+        <input type="text" class="form-input" placeholder="ex. Ta Ming, Wang" required />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">申請人之中文姓名 / Chinese Name</p>
+        <input type="text" class="form-input" placeholder="ex.王大明" />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">信箱 / Email</p>
+        <input type="email" class="form-input" placeholder="ex. example@example.com" required />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">密碼 / Password</p>
+        <input type="password" class="form-input" required />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">再一次輸入密碼 / re-Enter Password</p>
+        <input type="password" class="form-input" required />
+      </div>
+      <div class="inputbox" id="inputs-phone">
+        <p class="form-title">電話 / Phone</p>
+        <div class="form-between">
+          <select class="form-input">
+            <option value="" selected disabled>請選擇國籍</option>
+            <option value="886">+886 台灣</option>
+          </select>
+          <input type="email" class="form-input" placeholder="ex. 0912-345-678" required />
+        </div>
+      </div>
+      <div class="inputbox">
+        <p class="form-title">地址 / Address</p>
+        <input type="email" class="form-input" required />
+      </div>
+    </div>
+    <div class="content" id="content-finance">
+      <p class="title">個人金融資訊</p>
+      <div class="inputbox input-required">
+        <p class="form-title">交易幣種 / Currency</p>
+        <select class="form-input">
+          <option value="usd">USD / 美金</option>
+          <option value="usd">TWD / 台幣</option>
+        </select>
+      </div>
+      <div class="inputbox input-required">
+        <p class="form-title">
+          申請人之銀行帳號 / Account No
+        </p>
+        <p class="form-note">(必須為本人的銀行帳號)</p>
+        <input type="text" class="form-input" required />
+      </div>
+      <div class="inputbox input-required">
+        <p class="form-title">銀行電子地址 / Swift Code</p>
+        <input type="text" class="form-input" required />
+      </div>
+      <div class="inputbox input-required">
+        <p class="form-title">申請人之銀行中文名稱 / Bank Name in Chinese</p>
+        <input type="text" class="form-input" required />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">申請人之銀行英文名稱/ Bank Name in English</p>
+        <input type="text" class="form-input" />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">
+          分、支行中文名稱 / Branch Bank Name in Chinese
+        </p>
+        <input type="text" class="form-input" />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">
+          分、支行英文名稱 / Branch Bank Name in English
+        </p>
+        <input type="text" class="form-input" />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">
+          分、支行地址 / Branch Bank Address
+        </p>
+        <input type="text" class="form-input" />
+      </div>
+    </div>
+    <div class="content" id="content-upload">
+      <p class="title">申請必要文件上傳</p>
+      <p class="form-note">
+        接受拍照、確保內容清晰可見，只接受 JPG，JPEG，PNG，BMP，PDF之檔案格式
+      </p>
+      <div class="inputbox input-required">
+        <p class="form-title">護照証明 / Upload Passport Prove</p>
+        <p class="form-note">
+          請上傳護照個人資訊內頁之圖檔，確保內容清晰可見，只接受
+          JPG，JPEG，PNG，BMP，PDF之檔案格式
+        </p>
+        <div class="file-upload">
+          <label>
+            <input type="file" class="form-input-file" required />
+            <img src="" alt="" />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

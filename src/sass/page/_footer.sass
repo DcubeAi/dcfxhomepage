@@ -1,0 +1,63 @@
+.footer
+  width: 100%
+  background-color: #2e3031
+  color: white
+  padding: 2% 3%
+  .titlebox
+    text-align: center
+    padding-top: 2%
+    padding-bottom: 4%
+    .maintitle
+      font-size: 2rem
+      line-height: 1.2
+    .hr-line
+      width: 50px
+  .footer-container
+    width: 100%
+    padding: 2% 5%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &>*
+      width: 50%
+      padding: 0 5%
+  .note
+    line-height: 2
+    font-size: 1.1rem
+  .form-input
+    width: 100%
+    margin-bottom: 2%
+    border-radius: 5px
+    line-height: 1.5
+    padding: 6px 15px
+    color: $fontColor
+    font-size: 1.2rem
+  .footer-item, .copyright
+    line-height: 1.8
+    padding-left: 2%
+    font-size: 1.1rem
+    letter-spacing: 0.5pt
+    color: $white
+    display: block
+  .footer-icon
+    padding-right: 5px
+  .copyright
+    margin-top: 2%
+    font-size: 0.9rem
+    line-height: 1.5
+
+.trade-warns
+  background: $mainGreen
+  color: white
+  line-height: 1.5
+  text-align: center
+  padding: 1.5% 3%
+
+@media screen and (max-width: 1088px)
+  .footer-container
+    flex-wrap: wrap-reverse
+    .footer-content
+      width: 100%
+      padding: 3% 5%
+      &:last-child
+        padding-top: 0

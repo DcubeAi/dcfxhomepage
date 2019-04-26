@@ -1,0 +1,97 @@
+.active-container
+  display: flex
+  padding: 2% 5%
+  justify-content: space-between
+  height: auto
+  flex-wrap: wrap
+  .active-maintitle
+    color: white
+    font-size: 2rem
+    line-height: 2
+    padding-left: 2%
+    letter-spacing: 2pt
+    color: $mainBlue
+    text-align: left
+    position: relative
+    overflow: hidden
+    &:after
+      content: ""
+      width: 100%
+      position: absolute
+      height: 3px
+      top: 45%
+      background-color: $mainBlue
+      margin-left: 10px
+  .active-content
+    width: 49%
+    height: calc(92vh - 150px)
+    margin: 1% 0
+  .active-item
+    height: calc(100% - 70px)
+    overflow: hidden
+    position: relative
+    &:not(.no-border)
+      border: $line solid thin
+    .note
+      position: absolute
+      bottom: 0
+      background: $white
+      width: 100%
+      line-height: 30px
+      border-top: $line solid thin
+      &:before
+        content: "*"
+        padding: 0 3px
+        color: $mainRed
+  .active-lists
+    height: 100%
+    padding-bottom: 31px
+    .list-content
+      overflow-y: auto
+      height: calc(100% - 60px)
+      li:last-child
+        border: none
+    li
+      display: flex
+      align-items: center
+      min-height: 40px
+      line-height: 1.5
+      // border-bottom: $line solid thin
+      padding: 5px 0
+      &:nth-child(even)
+        background: $background
+      &.list-title
+        min-height: 60px
+        font-weight: 600
+        border-bottom: $line solid thin
+    span
+      text-align: center
+      display: inline-block
+      padding: 0 10px
+
+#time_list span
+  &.special:after
+    content: "*"
+    color: $mainRed
+  &:first-child
+    width: 15%
+  &:nth-child(2)
+    width: 39%
+  &:nth-child(3), &:last-child
+    width: 23%
+#holiday-list span
+  &:first-child, &:nth-child(3)
+    width: 15%
+  &:nth-child(2)
+    width: 39%
+  &:last-child
+    width: 31%
+
+iframe
+  height: 100%
+  width: 100%
+
+@media screen and (max-width: 1088px)
+  .active-container
+    .active-content
+      width: 100%

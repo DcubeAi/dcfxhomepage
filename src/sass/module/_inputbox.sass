@@ -1,0 +1,32 @@
+.inputbox
+  width: 100%
+  margin-bottom: 5%
+.form-note
+  font-size: 1rem
+  color: $fontSubColor
+  line-height: 1.5
+  margin-bottom: 7%
+.form-between
+  display: flex
+  justify-content: space-between
+  .form-input
+    width: 49%
+.form-title
+  color: $fontSubColor
+  line-height: 1.3
+  text-indent: 5px
+  font-size: 0.95rem
+.form-input
+  width: 100%
+  border: $line solid 1px
+  line-height: 1.5
+  padding: 5px 10px
+  border-radius: 5px
+  &:focus, &:hover
+    border-color: $mainBlue
+#inputs-phone
+  .form-between .form-input
+    &:first-child
+      width: 33%
+    &:last-child
+      width: 65%

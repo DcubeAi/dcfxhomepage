@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <!--FavIcon Icon-->
+  <link rel="shortcut icon" href="dist/images/favicon.ico" />
+  <link rel="stylesheet" href="dist/css/index.min.css" />
+  <!-- TODO -->
+  <!-- GENERAL -->
+  <meta name="author" content="Jinny Shih" />
+  <meta name="description" content="DcubeTrade為客戶提供MT5模擬與真實賬號。此外，我們還為賬戶管理員和VIP客戶提供專業化服務。並為大交易量客戶提供特有的DcubeTrade 黃金帳戶" />
+  <meta name="keywords" content="DcubeTrade, MT4, MT5, IB, introducing broker, forex, 外匯, CFD, 指數, 期貨, 貴金屬, 能源" />
+  <meta name="copyright" content="DcubeTrade © 2019 DcubeTrade Inc. All rights reserved" />
+  <meta name="distribution" content="global" />
+  <meta name="generator" content="DcubeTrade official website" />
+  <meta name="classification" content="forex, finance" />
+  <meta name="rating" content="general" />
+  <meta name="revisit-after" content="1 days" />
+  <title>DcubeTrade - 提供專業化的金融交易服務</title>
+  <!-- FACEBOOK -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DcubeTrade - 提供專業化的金融交易服務" />
+  <meta property="og:description" content="DcubeTrade為客戶提供MT4、MT5模擬與真實賬號。此外，我們還為賬戶管理員和VIP客戶提供專業化服務。並為大交易量客戶提供特有的DcubeTrade 黃金帳戶" />
+  <meta property="og:image" content="dist/images/logo.png" />
+  <meta property="og:site_name" content="DcubeTrade" />
+  <!-- <meta property="og:url" content="URL" /> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+  <script src="dist/js/index.min.js"></script>
+</head>
+
+<body>
+  <div class="registerbox">
+    <i class="icon-x close" onclick="toggleRegister()"></i>
+    <p class="form-title main-title">歡迎使用DcubeTrade，請填寫開戶申請表</p>
+    <form class="form-content" onsubmit="return false">
+      <p class="form-note">
+        只要五分鐘，就可以開始以錢滾錢，進入富人的金錢遊戲
+      </p>
+      <div class="inputbox">
+        <p class="form-title">申請人之英文姓名 / English Name</p>
+        <div class="form-between">
+          <input type="text" class="form-input" placeholder="ex.Wang" required />
+          <input type="text" class="form-input" placeholder="ex.Ta Ming" required />
+        </div>
+      </div>
+      <div class="inputbox">
+        <p class="form-title">申請人之中文姓名 / Chinese Name</p>
+        <div class="form-between">
+          <input type="text" class="form-input" placeholder="ex.王" />
+          <input type="text" class="form-input" placeholder="ex.大明" />
+        </div>
+      </div>
+      <div class="inputbox">
+        <p class="form-title">申請人之護照號碼 / Passport No.</p>
+        <input type="text" class="form-input" />
+      </div>
+      <div class="inputbox">
+        <p class="form-title">信箱 / Email</p>
+        <input type="email" class="form-input" placeholder="ex. example@example.com" required />
+      </div>
+      <div class="inputbox" id="inputs-phone">
+        <p class="form-title">電話 / Phone</p>
+        <div class="form-between">
+          <select class="form-input"></select>
+          <input type="text" class="form-input" placeholder="ex. 0912-345-678" required />
+        </div>
+      </div>
+      <div class="inputbox">
+        <p class="form-title">地址 / Address</p>
+        <input type="text" class="form-input" required />
+      </div>
+      <div class="form-button">
+        <button type="submit" class="btn btn-primary">建立新的帳戶</button>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <header class="header">
+      <nav class="navbar is-fixed-top-touch">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="dist/images/logo.png" />
+          </a>
+          <div class="navbar-flex">
+            <button class="btn btn-red btn-red-o" onclick="toggleRegister()">
+              開立真實帳號
+            </button>
+            <a role="button" class="navbar-burger burger" id="navbar-active" onclick="toggleMenu()">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div id="navbar-selects" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <p class="navbar-link">金融商品 <i class="icon-angle-down"></i></p>
+              <div class="navbar-dropdown">
+                <p class="navbar-title">現貨</p>
+                <a class="navbar-item" href="/forex.html">外匯</a>
+                <a class="navbar-item" href="/cfd.html">CFD</a>
+                <p class="navbar-title">期貨</p>
+                <a class="navbar-item" href="/indices.html">指數</a>
+                <a class="navbar-item" href="/metal.html">貴金屬</a>
+                <a class="navbar-item" href="/energy.html">能源</a>
+              </div>
+            </div>
+            <a class="navbar-item navbar-link" href="/metatrader.html">MetaTrader 5</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <p class="navbar-link">市場 <i class="icon-angle-down"></i></p>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/news.html">市場消息</a>
+                <a class="navbar-item" href="/active.html">市場活動</a>
+              </div>
+            </div>
+            <a class="navbar-item navbar-link" href="/about.html">關於我們</a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <button class="btn btn-red" onclick="toggleRegister()" id="createUser">
+                  開立真實帳號
+                </button>
+                <button class="btn btn-primary">登錄</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <article class="new-container">
+      <section class="new-content">
+        <p class="new-maintitle">即時新聞</p>
+        <div class="new-item">
+          <ul class="new-lists" id="new-lists">
+            <div class="loading-container">
+              <div class="lds-dual-ring"></div>
+              <span>新聞載入中...</span>
+            </div>
+          </ul>
+        </div>
+        <div class="pageview-content" id="pageview">
+        </div>
+      </section>
+    </article>
+    <div class="trade-warns">
+      <p>風險宣告：DCubeTrade Co., Ltd.
+        是DCube（大數田）獨資設立之子公司。絕大部分的衍生性金融商品都因為槓桿的效果而有巨大的風險，並不一定適合所有的投資者。DCubeTrade所提供的建議僅為一般性的建議，無法完全涵蓋投資人的各種情況，因此個別投資人在做衍生性金融商品的投資前，請先對自身狀況多加評估，並且詳加閱讀DCubeTrade所提供之產品披露聲明書以及金融服務指南。謝謝。
+      </p>
+    </div>
+    <footer class="footer">
+      <div class="titlebox">
+        <p class="maintitle">聯絡DcubeTrade</p>
+        <p class="hr-line"></p>
+      </div>
+      <article class="footer-container">
+        <section class="footer-content">
+          <form onsubmit="submitContentUS()">
+            <p class="note">如有任何疑問，請在表單中填寫您的聯絡資訊和問題，我們會盡快回覆於您</p>
+            <input class="form-input" type="text" placeholder="您的稱呼" required />
+            <input class="form-input" type="email" placeholder="您的信箱" required />
+            <textarea class="form-input" rows="8" placeholder="您的訊息" required></textarea>
+            <button type="submit" class="btn btn-primary">送出訊息</button>
+            <input type="reset" id="cleanContentUS" />
+          </form>
+        </section>
+        <section class="footer-content">
+          <a class="footer-item" href="tel:+886-2-7139962"><i class="footer-icon icon-phone-call"></i>(+886-2) 2713-9962</a>
+          <a class="footer-item" href="tel:+886-972162449"><i class="footer-icon icon-smartphone"></i>(+886) 955-361-811</a>
+          <a class="footer-item" href="mailto:frank@dcube.ai" target="_blank"><i
+              class="footer-icon icon-envelope"></i>frank@dcube.ai</a>
+          <a class="footer-item" href="https://goo.gl/maps/Pg7L9dGDiMp" target="_blank"><i
+              class="footer-icon icon-location"></i>106
+            台北市大安區羅斯福路二段33號12F</a>
+          <p class="copyright">任何瀏覽DcubeTrade公司網站(以下簡稱本網站)的人士，須自行承擔一切風險，本網站不會負責任何因瀏覽或使用本網站而引致之損失亦不會作出任何默示的擔保。
+            本網站承諾力求網站內容之準確性及完整性，但內容如有錯誤或遺漏，本網站不會承擔任何賠償責任，所有本網站內容，將會隨時更改，而不作另行通知。
+            <br />© DcubeTrade © 2019 DcubeTrade Inc. All rights reserved</p>
+        </section>
+      </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    <script>
+      function submitContentUS() {
+        event.preventDefault();
+        Swal.fire(
+          '',
+          '您的問題已經送出，將會派專人為您服務',
+          'success'
+        )
+        document.getElementById('cleanContentUS').click();
+      }
+    </script>
+    <div class="infobar isButtomFixed">
+      <div class="forex-price">
+        <section class="forex-itembox" id="forex-price">
+          <div class="loading-container">
+            <div class="lds-dual-ring"></div>
+            <span>報價取得中...</span>
+          </div>
+          <!-- <div-- class="forex-item">
+            <p class="title">黃金</p>
+            <p class="content">321.54</p>
+          </div-->
+        </section>
+        <section class="forexbtnbox">
+          <button class="btn btn-red" onclick="toggleRegister()">
+            立即開始交易
+          </button>
+        </section>
+      </div>
+    </div>
+    <script lang="javascript">
+      const currentWidth = document.body.clientWidth;
+      if (currentWidth > 600) {
+        var itemCount = getItemCount();
+        var int = self.setInterval("getPrice(itemCount)", 60000);
+      }
+    </script>
+  </div>
+  <script lang="javascript">
+    getFinanceNews();
+  </script>
+</body>
+
+</html>
